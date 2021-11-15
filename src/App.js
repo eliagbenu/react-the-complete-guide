@@ -1,8 +1,10 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import ExpenseItem from './components/ExpenseItem';
+import ExpenseItem from './components/Expenses/ExpenseItem';
 
-function App() 
+//function App() 
+const App = () =>
 {
 
   const expenses = [
@@ -17,6 +19,16 @@ function App()
     }        
   ];
 
+  /*
+  return React.createElement(
+      'div',
+      {},
+      React.createElement('h2', {} , "Let's get started"),
+      React.createElement(Expenses, { items: expenses } )
+    );
+  */
+  
+
   return (
   <div>
     <h2>Lets go</h2>
@@ -28,6 +40,8 @@ function App()
     <ExpenseItem id={expenses[2].id} title={expenses[2].title} amount={expenses[2].amount}  date={expenses[2].date} ></ExpenseItem>    
   </div>
   );
+
+
 }
 
 export default App;
