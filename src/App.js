@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ExpenseItem from './components/Expenses/ExpenseItem';
+import NewExpense from './components/NewExpense/NewExpense';
 
 //function App() 
 const App = () =>
@@ -32,7 +33,7 @@ const App = () =>
   return (
   <div>
     <h2>Lets go</h2>
-    <p>this is also visible</p>
+    <NewExpense></NewExpense>
     <ExpenseItem id={expenses[0].id} title={expenses[0].title} amount={expenses[0].amount} date={expenses[0].date} ></ExpenseItem>
 
     <ExpenseItem id={expenses[1].id} title={expenses[1].title} amount={expenses[1].amount}  date={expenses[1].date} ></ExpenseItem>
